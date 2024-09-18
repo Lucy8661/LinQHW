@@ -33,8 +33,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.3.9.38\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,6 +72,21 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unipluss.Sign.Client, Version=1.0.2876.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unipluss.Sign.Client.1.0.2876\lib\net40\Unipluss.Sign.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Unipluss.Sign.Client.Common, Version=1.0.2876.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unipluss.Sign.Client.1.0.2876\lib\net4\Unipluss.Sign.Client.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unipluss.Sign.Common.Rest, Version=1.0.2876.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unipluss.Sign.Client.1.0.2876\lib\net4\Unipluss.Sign.Common.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Unipluss.Sign.Common.Validation, Version=1.0.2876.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unipluss.Sign.Client.1.0.2876\lib\net4\Unipluss.Sign.Common.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unipluss.Sign.ExternalContract, Version=1.0.2876.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unipluss.Sign.Client.1.0.2876\lib\net4\Unipluss.Sign.ExternalContract.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1. FrmHelloLinq.cs">
@@ -75,6 +119,61 @@
     <Compile Include="5. FrmLinq_To_Entity.Designer.cs">
       <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdventureWorks.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureWorks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>NWModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Frm作業_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm作業_1.Designer.cs">
+      <DependentUpon>Frm作業_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm作業_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm作業_2.Designer.cs">
+      <DependentUpon>Frm作業_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm作業_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm作業_3.Designer.cs">
+      <DependentUpon>Frm作業_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NWDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NWModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NWModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NWModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>NWModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Detail.cs">
+      <DependentUpon>NWModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>NWModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="1. FrmHelloLinq.resx">
@@ -92,6 +191,15 @@
     <EmbeddedResource Include="5. FrmLinq_To_Entity.resx">
       <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm作業_1.resx">
+      <DependentUpon>Frm作業_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm作業_2.resx">
+      <DependentUpon>Frm作業_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm作業_3.resx">
+      <DependentUpon>Frm作業_3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -102,6 +210,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="AdventureWorks.xsc">
+      <DependentUpon>AdventureWorks.xsd</DependentUpon>
+    </None>
+    <None Include="AdventureWorks.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdventureWorks.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AdventureWorks.xss">
+      <DependentUpon>AdventureWorks.xsd</DependentUpon>
+    </None>
+    <None Include="NWDataSet.xsc">
+      <DependentUpon>NWDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NWDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NWDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NWDataSet.xss">
+      <DependentUpon>NWDataSet.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="NWModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NWModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="NWModel.edmx.diagram">
+      <DependentUpon>NWModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +252,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NWModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>NWModel.Context.cs</LastGenOutput>
+      <DependentUpon>NWModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="NWModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NWModel.edmx</DependentUpon>
+      <LastGenOutput>NWModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
